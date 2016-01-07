@@ -19,7 +19,7 @@ def calculate(tokens):
     # Convert to ints
     calc_ints = []
     for num in tokens[1:]:
-        calc_ints.append(int(num))
+        calc_ints.append(float(num))
 
     if tokens[0] == "+":
         print add(calc_ints[0], calc_ints[1])
