@@ -13,6 +13,16 @@ def tokenize(input):
     tokens = input.split(' ')
     return tokens
 
+def calculate(tokens):
+    """Chooses and calls arithmetic function indicated by first token."""
+
+    # Convert to ints
+    calc_ints = []
+    for num in tokens[1:]:
+        calc_ints.append(int(num))
+
+    if tokens[0] == "+":
+        print add(calc_ints[0], calc_ints[1])
 
 # Your code goes here
 # No setup
@@ -29,4 +39,4 @@ while True:
 
 # tokenize("+ 0 1")
 # tokenize("mod 10 3")
-
+# calculate(["+", "2", "6"])
