@@ -22,7 +22,8 @@ def calculate(tokens):
         calc_ints.append(float(num))
 
     if tokens[0] == "+":
-        print add(calc_ints[0], calc_ints[1])
+        # print add(calc_ints[0], calc_ints[1])
+        print reduce(add, calc_ints)        
 
     elif tokens[0] == "-":
         print subtract(calc_ints[0], calc_ints[1])
