@@ -16,12 +16,16 @@ def tokenize(input):
 
 # Your code goes here
 # No setup
-# repeat forever:
-#     read input
-#     tokenize input
-#     if the first token is 'q', quit
-#     otherwise decide which math function to call based on the tokens we read
+while True:
+    calc_input = raw_input("> ")
 
+    calc_tokens = tokenize(calc_input)
+    
+    if calc_tokens[0] == 'q':
+        break
+#     otherwise decide which math function to call based on the tokens we read
+    else:
+        print 'now a calculation!!!'
 
 # tokenize("+ 0 1")
 # tokenize("mod 10 3")
