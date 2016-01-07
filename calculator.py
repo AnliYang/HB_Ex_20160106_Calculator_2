@@ -35,7 +35,7 @@ while True:
         break
 #     otherwise decide which math function to call based on the tokens we read
     else:
-        print 'now a calculation!!!'
+        calculate(calc_tokens)
 
 # tokenize("+ 0 1")
 # tokenize("mod 10 3")
