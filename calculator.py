@@ -24,6 +24,30 @@ def calculate(tokens):
     if tokens[0] == "+":
         print add(calc_ints[0], calc_ints[1])
 
+    elif tokens[0] == "-":
+        print subtract(calc_ints[0], calc_ints[1])
+
+    elif tokens[0] == "*":
+        print multiply(calc_ints[0], calc_ints[1])
+
+    elif tokens[0] == "/":
+        print divide(calc_ints[0], calc_ints[1])
+
+    elif tokens[0] == "square":
+        print square(calc_ints[0])
+
+    elif tokens[0] == "cube":
+        print cube(calc_ints[0])
+
+    elif tokens[0] == "pow":
+        print power(calc_ints[0], calc_ints[1])
+
+    elif tokens[0] == "mod":
+        print mod(calc_ints[0], calc_ints[1])
+
+    else: 
+        print "I don't understand!"
+
 # Your code goes here
 # No setup
 while True:
